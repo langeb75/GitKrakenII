@@ -8,6 +8,7 @@ public class Main {
             total = total + (i * i);
         }
         System.out.println(total);
+    }
 
     public static void rollASix() {
         int rollDice = 0;
