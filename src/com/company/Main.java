@@ -29,15 +29,16 @@ public class Main {
 
     }
     
-    public static double calculateAverage(double [] temperature){
-    int size = temperature.length;
-    double total = 0;
-    for(int i=0; i<size; i++){
-        total += temperature[i];
+    public static double calculateAverage(double [] temperature) {
+        int size = temperature.length;
+        double total = 0;
+        for (int i = 0; i < size; i++) {
+            total += temperature[i];
+        }
+        double average = total / size;
+        System.out.println("Average Temperature of the " + size + " readings: " + Math.round(average * 100.0) / 100.0);
+        return average;
     }
-    double average = total/size;
-    System.out.println("Average Temperature of the " + size + " readings: " + Math.round(average * 100.0) / 100.0);
-    return average;
         
         
     
